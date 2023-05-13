@@ -1,0 +1,42 @@
+{
+  "name": "@xiifain/nest-promptpay-qr",
+  "version": "0.0.1",
+  "description": "NestJS library for Thai promptpay-qr",
+  "author": "Aung Thiha <aungthiha.160898@gmail.com>",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "main": "dist/index.js",
+  "files": [
+    "dist/**/*",
+    "*.md"
+  ],
+  "scripts": {
+    "start:dev": "tsc -w",
+    "build": "tsc",
+    "prepublish:next": "npm run build",
+    "publish:next": "npm publish --access public --tag next",
+    "prepublish": "npm run build",
+    "release": "npm publish --access public",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage"
+  },
+  "dependencies": {
+    "promptpay-qr": "^0.5.0",
+    "@nestjs/common": "^9.4.0",
+    "rxjs": "^7.8.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.2",
+    "@types/node": "^18.15.3",
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "@typescript-eslint/parser": "^5.56.0",
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.5"
+  }
+}
