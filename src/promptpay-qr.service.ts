@@ -3,7 +3,7 @@ import generatePayload = require('promptpay-qr');
 
 @Injectable()
 export class PromptpayQRService {
-  generate(id: string, amount: number): string {
+  generate(id: string, amount?: number): string {
     return generatePayload(id, { amount });
   }
 }
