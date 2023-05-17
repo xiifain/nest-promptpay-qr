@@ -1,6 +1,6 @@
 {
   "name": "@xiifain/nest-promptpay-qr",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "NestJS library for Thai promptpay-qr",
   "author": "Aung Thiha <aungthiha.160898@gmail.com>",
   "homepage": "https://github.com/xiifain/nest-promptpay-qr",
